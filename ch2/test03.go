@@ -1,14 +1,19 @@
+// Echo4 prints its command-line arguments.
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "flag"
+  "strings"
+)
 
-func main() {
-  func incr(p*int) int {
-    *p++
-    return *p
+var n = flag.Bool("n", false, "omit trailing newline")
+var sep = flag.String("s", "", "separator")
+
+func main () {
+    flag.Parse()
+    fmt.Print(strings.Join(flag.Args(), *sep))
+    if !*n {
+      fmt.Println()
     }
-
-v := 1
-incr(&v)
-fmt.Println(incr(&v))
-  }
+}
