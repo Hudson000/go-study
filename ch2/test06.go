@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"go-study/mypackage/tempconv"
+	"mypackage"
 	"os"
 	"strconv"
 )
