@@ -13,7 +13,7 @@ func gcd(x, y int) int {
 	return x
 }
 
-func main() {
+func test04() {
 	if len(os.Args) < 3 {
 		fmt.Println("请输入两个整数")
 		return

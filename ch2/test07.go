@@ -1,17 +1,17 @@
 package main
 
 import (
-  "fmt"
-  "test/popcount"
-  "os"
-  "strconv"
+	"fmt"
+	"os"
+	"strconv"
+	"test/popcount"
 )
 
-func main() {
-  x := os.Args[1]
-  y, err := strconv.ParseUint(x,10,64)
-  if err != nil {
-    return
-  } 
-  fmt.Println(popcount.PopCount(y))
+func test07() {
+	x := os.Args[1]
+	y, err := strconv.ParseUint(x, 10, 64)
+	if err != nil {
+		return
+	}
+	fmt.Println(popcount.PopCount(y))
 }
