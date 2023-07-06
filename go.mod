@@ -1,3 +1,3 @@
-module go-study
+module test
 
-go 1.20
+go 1.19

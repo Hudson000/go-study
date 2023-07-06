@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"mypackage"
+	"test/tempconv"
 	"os"
 	"strconv"
 )
